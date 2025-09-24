@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warung Mie Ayam Bumbu Bali Wonosobo</title>
+
+  <!-- Basic Content Security Policy (CSP) - sesuaikan lagi saat di-server -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' https:; img-src 'self' https: data:; script-src 'self'; style-src 'self' 'unsafe-inline';">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🍜 Warung Mie Ayam Bumbu Bali Wonosobo</h1>
+    <nav>
+      <!-- Ubah href ke domain nyata Anda sebelum publish.
+           target="_blank" agar terbuka di tab baru, rel menambah keamanan -->
+      <a id="mainLink"
+         href="https://your-real-domain.example"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Buka Warung Mie Ayam Bumbu Bali Wonosobo (buka di tab baru)">
+         Warung Mie Ayam Bumbu Bali Wonosobo
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="description">
+      <h2>Tentang Warung Kami</h2>
+      <p>
+        Warung Mie Ayam Bumbu Bali Wonosobo menyajikan mie ayam khas dengan cita rasa bumbu Bali 
+        yang gurih, pedas, dan nikmat. Warung ini menjadi favorit masyarakat lokal maupun wisatawan 
+        yang singgah di Wonosobo. Kami selalu menjaga kualitas rasa, kebersihan, dan kenyamanan pengunjung.
+      </p>
+    </section>
+
+    <section class="gallery" aria-label="Galeri foto warung">
+      <h2>Dokumentasi Warung</h2>
+      <img src="https://source.unsplash.com/600x400/?noodles,food" alt="Mie Ayam">
+      <img src="https://source.unsplash.com/600x400/?chicken,food" alt="Ayam">
+      <img src="https://source.unsplash.com/600x400/?restaurant" alt="Warung">
+    </section>
+
+    <section class="rating" aria-label="Rating bintang">
+      <h2>Beri Rating</h2>
+      <div id="stars" role="radiogroup" aria-label="Rating bintang (1 sampai 5)"></div>
+      <p id="ratingValue">Rating Anda: 0</p>
+    </section>
+
+    <section class="comments" aria-label="Form komentar">
+      <h2>Kritik & Saran</h2>
+      <form id="commentForm" autocomplete="off" novalidate>
+        <label for="commentInput" class="sr-only">Komentar</label>
+        <textarea id="commentInput" placeholder="Tulis komentar Anda..." required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+      <ul id="commentList" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Warung Mie Ayam Bumbu Bali Wonosobo</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

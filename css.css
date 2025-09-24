@@ -1,0 +1,141 @@
+/* Reset style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #333;
+}
+
+header {
+  background: #d32f2f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #d32f2f;
+}
+
+.description p {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 280px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rating {
+  text-align: center;
+}
+
+#stars {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ccc;
+}
+
+#stars span.active {
+  color: gold;
+}
+
+.comments form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  min-height: 80px;
+}
+
+button {
+  padding: 10px;
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #b71c1c;
+}
+
+#commentList {
+  list-style: none;
+}
+
+#commentList li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f4f4f4;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .gallery img { max-width: 100%; }
+}
